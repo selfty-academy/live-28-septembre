@@ -1934,7 +1934,7 @@ const CONFIG = {
   DUREE_MIN: 75, // durée du live, pour l'événement d'agenda (18h00 à 19h15)
   TITRE_AGENDA: "Live Selfty Academy avec Anaïs",
   // descriptif de l'invitation agenda
-  DETAILS_AGENDA: "Live gratuit avec Anaïs : expérience somatique guidée, vraie séance de coaching en direct et décryptage outil par outil, avec Anaïs.\n\nLe lien Zoom t'arrive par mail et WhatsApp avant le live.",
+  DETAILS_AGENDA: "Live gratuit avec Anaïs : expérience somatique guidée, vraie séance de coaching en direct et décryptage outil par outil, avec Anaïs.",
   // Apps Script « Selfty - webhook inscriptions live », déployé le 7 août 2026.
   // Écrit dans l'onglet « Inscriptions » du classeur Candidature Webi,
   // en upsert sur l'e-mail. Si tu redéploies en créant un NOUVEAU
@@ -2412,7 +2412,7 @@ setTimeout(() => {
   const utc = d => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 
   const titre = CONFIG.TITRE_AGENDA;
-  const details = CONFIG.DETAILS_AGENDA + (CONFIG.VISIO_URL ? "\n\nLien du live : " + CONFIG.VISIO_URL : "");
+  const details = CONFIG.DETAILS_AGENDA + (CONFIG.VISIO_URL ? "\n\nLien du live : " + CONFIG.VISIO_URL : "\n\nLe lien Zoom t'arrive par mail et WhatsApp avant le live.");
   const lieu = CONFIG.VISIO_URL || "En ligne";
 
   const google = 'https://calendar.google.com/calendar/render'
